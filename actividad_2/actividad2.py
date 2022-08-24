@@ -14,11 +14,12 @@ class students:
     def menu(self):
             option = 0
             while option != 1 or option != 2 or option != 3:
-                print("\n1- Upload students")
+                print('\nMain menu\n')
+                print("1- Upload students")
                 print("2- List students")
                 print("3- Students grades greater or equal to 7")
                 
-                option=int(input("Enter an option: "))
+                option=int(input("Please enter an option: "))
                 
                 if option==1:
                     self.upload()
@@ -68,7 +69,8 @@ class diary:
     def menu(self):
         option = 0
         while option!=5:
-            print("\n1- Register a contact")
+            print('\nMain menu\n')
+            print("1- Register a contact")
             print("2- Complete list of contacts")
             print("3- Query by name")
             print("4- Change phone number and email")
