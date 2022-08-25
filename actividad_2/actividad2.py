@@ -158,13 +158,49 @@ club1 = club()
 club1.greater_seniority()
 
 
-
-
-
-
 """
 4) Un banco tiene 3 clientes que pueden hacer depósitos y extracciones. También el banco requiere 
 que al final del día calcule la cantidad de dinero que hay depositado. 
 Lo primero que hacemos es identificar las clases: Podemos identificar la clase Cliente y la clase 
 Banco. Luego debemos definir los atributos y los métodos de cada clase 
 """
+class bank:
+
+	def __init__(self):
+		self.client1 = client("Sophia")
+		self.client2 = client("John")
+		self.client3 = client("Sarah")
+
+	def action_requider(self):
+		self.client1.deposit(1000)
+		self.client2.deposit(300)
+		self.client3.deposit(43)
+		self.client1.extract(400)
+
+	def deposits(self):
+		total = self.client1.return_amount() + self.client2.return_amount() + self.client3.return_amount()
+		print(f'The total money in the bank is: {total} Dollars')
+		self.client1.show_amount()
+		self.client2.show_amount()
+		self.client3.show_amount()
+class client:
+
+	def __init__(self,name):
+		self.name = name
+		self.amount = 0
+
+	def deposit(self,amount):
+		self.amount += amount
+        
+	def extract(self,amount):
+		self.amount -= amount
+
+	def return_amount(self):
+		return self.amount
+
+	def show_amount(self):
+		print(f'{self.name} has deposited {self.amount} Dollars')
+
+bank1 = bank()
+bank1.action_requider()
+bank1.deposits()
