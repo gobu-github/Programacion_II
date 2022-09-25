@@ -11,7 +11,7 @@ class counter:
         self.window = Tk()
         self.window.resizable( 0, 0 )
         self.window.config( background = '#4B4B4D' )
-        self.window.iconbitmap( './logo.ico' )
+        self.window.iconbitmap( './images/logo.ico' )
         self.window.title( 'Exercise4' )
 
         # block 1
@@ -45,7 +45,7 @@ class counter:
         block5 = Frame()
         block5.grid( row = 1, column = 1 )
         block5.config( width = '150', height = '150', bg = '#2B3A4A' )
-        logo_image=PhotoImage( file = './logo.png' )
+        logo_image=PhotoImage( file = './images/logo.png' )
         label=Label( self.window, image = logo_image, bg = '#2B3A4A' )
         label.grid( row = 1, column= 1 )
 

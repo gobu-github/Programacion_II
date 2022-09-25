@@ -7,8 +7,8 @@ from tkinter import *
 # Create new instance - class Tk()  
 root = Tk()
 root.geometry( '600x400' )
-root.iconbitmap( './logo.ico' )
-root.title( 'Form - Python' )
+root.iconbitmap( './images/logo.ico' )
+root.title( 'User Login' )
 root.resizable( 0, 0 )
 root.config( background = '#2B3A4A' )
 

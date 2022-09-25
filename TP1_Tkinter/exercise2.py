@@ -11,7 +11,7 @@ from tkinter import *
 # Create new instance - class Tk()  
 window = Tk()
 window.geometry( '600x450' )
-window.iconbitmap( './logo.ico' )
+window.iconbitmap( './images/logo.ico' )
 window.title( 'Form - Python' )
 window.resizable( 0, 0 )
 window.config( background = '#2B3A4A' )

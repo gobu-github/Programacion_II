@@ -16,7 +16,7 @@ def isMan():
 
 # Create new instance class Tk()  
 window = Tk()
-window.iconbitmap( './logo.ico' )
+window.iconbitmap( './images/logo.ico' )
 window.title( 'Exercise3' )
 window.config( background = '#4B4B4D' )
 
