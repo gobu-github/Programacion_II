@@ -7,7 +7,7 @@
 # realizarlo con un mensaje o una ventana modal.
 # Si el usuario es correcto mostrar la ventana del ejercicio 2 minimizando o cerrando la primera.
 
-#import tkinter as tk
+#import tkinter and messagebox
 from tkinter import*
 from tkinter import messagebox
 

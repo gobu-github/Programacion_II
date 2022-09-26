@@ -13,14 +13,14 @@ from tkinter import ttk
 from msilib.schema import ComboBox
 from tkinter import messagebox
 
-# function to validate no more than 8 characters on document field
+# function to validate 8 characters on document field
 def validate_docNumber(text1, newText1):
     if len(newText1) > 8:
         messagebox.showinfo("", "8 characters max")
         return False
     return text1.isdecimal()
 
-# function to validate no more than 4 characters on year field
+# function to validate 4 characters on year field
 def validate_year(text2, newText2): 
     if len(newText2) > 4:
         messagebox.showinfo("", "4 characters max")
