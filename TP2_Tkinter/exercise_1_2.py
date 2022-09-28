@@ -27,7 +27,7 @@ def login():
     global password_entry
     password = password_entry.get()
     
-    if(username == "a" and password == "a"):
+    if(username == "admin" and password == "admin"):
     
 # screen1, it can only be accessed with the correct username and password
         screen.iconify()
